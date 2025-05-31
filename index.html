@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub Zikmund - Portfolio</title>
+    <meta name="description" content="Portfolio of Jakub Zikmund - IT Student & Developer from Plzen">
+    <meta name="author" content="Jakub Zikmund">
+    
+    <meta property="og:title" content="Jakub Zikmund - Portfolio">
+    <meta property="og:description" content="Portfolio of Jakub Zikmund - IT Student & Developer from Plzen">
+    <meta property="og:type" content="website">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dot Background -->
+    <div id="dotBackground" class="dot-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="scrollToSection('home')">JZ</div>
+            <div class="nav-menu">
+                <button class="nav-link" data-section="about" onclick="scrollToSection('about')">About</button>
+                <button class="nav-link" data-section="portfolio" onclick="scrollToSection('portfolio')">Portfolio</button>
+                <button class="nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+            <button class="lang-toggle" onclick="toggleLanguage()"><img src="public/cz_flag.png" alt="EN" style="border-radius: 4px;"></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-image-container">
+                <img src="public/profile.jpg" alt="Jakub Zikmund" class="hero-image">
+                <div class="hero-image-glow"></div>
+            </div>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <div class="terminal-button red"></div>
+                        <div class="terminal-button yellow"></div>
+                        <div class="terminal-button green"></div>
+                    </div>
+                    <div class="terminal-title">terminal</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span id="typing-text" class="terminal-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="hero-name">Jakub Zikmund</h1>
+            <p class="hero-subtitle"><span class="code-brackets">&lt;</span>IT Student & Developer from Plzen<span class="code-brackets">/&gt;</span></p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label projects-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label technologies-label">Technologies</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">300+</span>
+                    <span class="stat-label commits-label">Commits</span>
+                </div>
+            </div>
+            
+            <button class="hero-cta" onclick="scrollToSection('portfolio')">
+                <span class="button-text"><span class="code-brackets">{</span> Portfolio <span class="code-brackets">}</span></span>
+                <div class="button-glow"></div>
+            </button>            
+            
+            <div class="hero-scroll-indicator">
+                <div class="scroll-arrow-down"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-paragraph">
+                    <div class="paragraph-line blue"></div>
+                    <div class="paragraph-content">
+                        <h3>Hello!</h3>
+                        <p>I am a student of information technology from Pilsen, who has already set up a business at the age of 18 and is trying to gain real experience as soon as possible. I'm a curious and listening person who was attracted by technology and the possibility to create something of my own in this sci-fi environment.</p>
+                    </div>
+                </div>
+                
+                <div class="about-paragraph">
+                    <div class="paragraph-line purple"></div>
+                    <div class="paragraph-content">
+                        <h3>My IT background:</h3>
+                        <p>My first project was to create a WordPress website for a small company called INBYT. I'm glad for this experience because it made me realize how boring I find website development :). After that, we chose a sub-field in high school - I chose “software development”, where we are currently learning Java from a person who is in the business himself and knows how to pass on practical knowledge, which opened the door to a world I've come to like much more than websites. My biggest experience so far are two medium-sized web applications for company called IMONT, which you can find as my portfolio projects. Thanks to them, I went through the entire development process - from design to deploying the applications in Docker containers within the company network.</p>
+                    </div>
+                </div>
+                
+                <div class="about-paragraph">
+                    <div class="paragraph-line pink"></div>
+                    <div class="paragraph-content">
+                        <h3>Where am I heading?</h3>
+                        <p>Although web application development has moved me forward a lot, I would like to move to developing standalone programs - I am currently interested in C# and Java. My professional goal is to become a team leader and architecture designer, not just staying with the role of a classic programmer, but aiming higher. I know that such a position requires diligence and systematic building of experience, so I have set up this portfolio page to track my level and progress.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h3 class="tech-label">Technologies</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">ReactJS</span>
+                    <span class="skill-tag">Redux</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Javascript</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">OpenAI</span>
+                    <span class="skill-tag">JetBrains IDEs</span>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="certifications-section">
+                <h3 class="cert-label">Certifications</h3>
+                <div class="certifications-container">
+                    <div class="certification-item">
+                        <div class="certification-logo">
+                            <img src="public/cisco_networking_academy1_logo.jpg" alt="cisco_networking_academy_logo" class="cert-image">
+                        </div>
+                        <div class="certification-info">
+                            <h4>CCNAv7: Introduction to Networks</h4>
+                            <span class="certification-date">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="certification-item">
+                        <div class="certification-logo">
+                            <img src="public/code_with_mosh.png" alt="code with mosh logo" class="cert-image">
+                        </div>
+                        <div class="certification-info">
+                            <h4>Code with Mosh: The Ultimate Docker Course</h4>
+                            <span class="certification-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">My projects and work</p>
+            
+            <div class="projects-grid">
+                <div class="project-window" data-project="0">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button red"></div>
+                            <div class="window-button yellow"></div>
+                            <div class="window-button green"></div>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <div class="project-visual">
+                            <img src="public/projects/dovolene.png" alt="app Employee leave" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Employee vacation system</h3>
+                            <p>Medium-sized web application built with React and TypeScript featuring modern UI/UX design.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-window" data-project="1">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button red"></div>
+                            <div class="window-button yellow"></div>
+                            <div class="window-button green"></div>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <div class="project-visual">
+                            <img src="public/projects/IT_helpdesk.png" alt="it helpdesk image" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Web Application #2</h3>
+                            <p>Another complex web application with advanced functionalities and responsive design.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-window" data-project="2">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button red"></div>
+                            <div class="window-button yellow"></div>
+                            <div class="window-button green"></div>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <div class="project-visual">
+                            <img src="public/projects/upgates_data_export.png" alt="Java Project" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>#</h3>
+                            <p>#</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Desktop Application</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-window" data-project="2">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button red"></div>
+                            <div class="window-button yellow"></div>
+                            <div class="window-button green"></div>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <div class="project-visual">
+                            <img src="public/projects/hope_to_see.png" alt="hope to see image" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>#</h3>
+                            <p>#</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Desktop Application</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-window" data-project="0">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button red"></div>
+                            <div class="window-button yellow"></div>
+                            <div class="window-button green"></div>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <div class="project-visual">
+                            <img src="public/projects/virus_spread.png" alt="virus spread web" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>#</h3>
+                            <p>#</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/JakubZikmund/virus-spread-simulation" target="_blank" rel="noopener noreferrer">
+                                <button class="project-link-button">
+                                    Link <i class="fas fa-arrow-right"></i>
+                                </button>
+                                </a>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-window" data-project="0">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button red"></div>
+                            <div class="window-button yellow"></div>
+                            <div class="window-button green"></div>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <div class="project-visual">
+                            <img src="public/projects/inbyt_website.png" alt="inbyt website image" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3></h3>
+                            <p>#</p>
+                            <div class="project-actions">
+                                <a href="https://www.inbyt.cz" target="_blank" rel="noopener noreferrer">
+                                <button class="project-link-button">
+                                    Link <i class="fas fa-arrow-right"></i>
+                                </button>
+                                </a>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Divi Themes</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h3 class="info-contact">Contact info</h3>
+                        <a href="mailto:jakub@zikmund.me">work@jakubzikmund.eu</a><br>
+                        <a href="tel:+420606531045">+420 606 531 045</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h3 class="linkedin-contact">LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/jakub-zikmund" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="linkedin-subtext">Connect with me</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h3 class="github-contact">GitHub</h3>
+                        <a href="https://github.com/JakubZikmund" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span class="github-subtext">View my code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="script.js"></script>
+</body>
+</html>
