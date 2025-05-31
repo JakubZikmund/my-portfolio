@@ -71,7 +71,7 @@ const translations = {
             ]
         },
         contact: {
-            title: 'Contact',
+            title: 'Contact me!',
             Github: 'Github',
             GithubSubtitle: 'View my code',
             linkedIn: 'LinkedIn',
@@ -83,7 +83,7 @@ const translations = {
         },
         terminal: {
             commands: [
-                'Welcome on my page! 🚀',
+                'Welcome! 🚀',
                 'IT Student from Pilsen, passionate developer',
                 'Building something I can be proud of.',
                 'work@jakubzikmund.eu',
@@ -162,7 +162,7 @@ const translations = {
             ]
         },
         contact: {
-            title: 'Kontakt',
+            title: 'Kontaktujte mě!',
             GithubSubtitle: 'Můj kód',
             linkedInSubtitle: 'Pojďme se spojit!',
             contactInfo: 'Kontaktní údaje',
@@ -172,7 +172,7 @@ const translations = {
         },
         terminal: {
             commands: [
-                'Vítejte na mé stránce! 🚀',
+                'Vítejte! 🚀',
                 'IT Student z Plzně, nadšený vývojář',
                 'Budování a rozvíjení toho, co mi dává smysl.',
                 'work@jakubzikmund.eu',
